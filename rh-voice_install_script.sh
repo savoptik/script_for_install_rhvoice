@@ -13,7 +13,5 @@ sudo ldconfig
 
 sudo cp -a /usr/local/bin/sd_rhvoice /usr/lib/speech-dispatcher-modules
 cp ./rhvoice.conf /etc/speech-dispatcher/modules/
-# дополнительные действия
-# sudo nano /etc/speech-dispatcher/speechd.conf
-# добавить модуль
-#AddModule "rhvoice" "sd_rhvoice" "rhvoice.conf"
+chown $1 /etc/speech-dispatcher/speechd.conf
+echo '#AddModule "rhvoice" "sd_rhvoice" "rhvoice.conf"' >>/etc/speech-dispatcher/speechd.conf
