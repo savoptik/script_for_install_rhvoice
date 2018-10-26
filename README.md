@@ -3,7 +3,7 @@
 Порядок действий:
 1. Скачайте содержимое репазитория
 
-    $ git clone 
+    $ git clone https://github.com/savoptik/script_for_install_rhvoice
 
 2. Выясните ID своей учётной записи:
 
